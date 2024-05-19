@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <!--<script defer src="src/script.js"></script>-->
+    <title>Meta Developers Documentation</title>
+</head>
+<body>
+    <header class="flex">
+        <!-- Mobile menu-->
+        <div class=" p-4 mobile-menu lg:hidden container mx-auto flex justify-between items-center">
+            <div class="logo">
+                <a href="#"><img src="src/assets/icons/logo.svg" alt=""></a>
+            </div>
+            <div class="icon-nav flex space-x-4">
+                <a href="#">
+                    <svg data-slot="icon" fill="none" class="h-7 w-7" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg data-slot="icon" fill="none" class="h-7 w-7" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Desktop menu-->
+        <div class=" desktop-menu   p-2 hidden lg:flex bg-header-bg w-screen  text-white justify-between items-center">
+            <div class="logo">
+                <a href="#"><img src="src/assets/icons/logo.svg" alt=""></a>
+            </div>
+            <div class="icon-nav flex space-x-4">
+                <ul class="flex gap-6">
+                    <li><a href="#" class="font-bold">Documentation</a></li>
+                    <li><a href="#">Outils</a></li>
+                    <li><a href="#">Assistance</a></li>
+                    <li><a href="#">Apps</a></li>
+                    <li><a href="#">Actions requises</a></li>
+                </ul>
+                <form action="">
+                    <input placeholder="Rechercher" type="search" name="search" id="search" class="placeholder:p-2">
+                </form>
+                <div>
+                    <svg data-slot="icon" class="w-6 f-6" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"></path>
+                      </svg>
+                </div>
+                <div>
+                    <img src="src/assets/images/profiles.jpg" alt="" class="w-7 h-7 rounded-full">
+                </div>
+                <a href="#">
+                    <svg data-slot="icon" class="h-6 w-6" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+<main class=" p-10 flex items-center justify-center flex-col">
+    <section>
+        <h1 class="text-4xl font-bold pb-4 pt-3">Documentation pour les equipes de developpement Meta</h1>
+        <p class="text-lg"><a class="hover:underline text-blue-950">Découvrez comment envoyer et recevoir des données</a> depuis le graphe social de Meta et comment implémenter les API, les plateformes, les produits et les SDK pour répondre à vos besoins applicatifs.</p>
+    </section>
+    <section class=" container pt-9 grid lg:grid-cols-3 gap-14 lg:pb-16">
+        <div class="">
+            <h3 class="text-lg font-bold">Developpement des applications Meta</h3>
+            <p>Inscrivez-vous en tant que développeur·se, configurez les paramètres de votre application dans l’Espace App, puis construisez, testez et diffusez votre application.</p>
+            <a class="hover:underline text-blue-600 pt-3" href="#">Docs</a>
+        </div>
+        <div class="">
+            <h3 class="text-lg font-bold">API Graph</h3>
+            <p>L’API Graph est l’interface principale par laquelle les applications peuvent lire et écrire sur le graphe social de Meta.</p>
+            <a class="hover:underline text-blue-600 pt-3" href="#">Documentation</a>
+        </div>
+        <div class="">
+            <h3 class="text-lg font-bold">Initiatives responsables sur la plateforme</h3>
+            <p>Le Contrôle app permet de vérifier que votre application dispose des approbations nécessaires pour utiliser nos produits et API.</p>
+            <a class="hover:underline text-blue-600 pt-3" href="">Documentation</a>
+        </div>
+    </section>
+    <section class="pt-9 container grid-list">
+        <div class="grid lg:grid-cols-4">
+            <div class="item flex flex-col pr-20">
+                <div class="bloc-1 pb-8">
+                    <h3 class="text-md font-bold border-t-2 border-black pt-5">Intégrations d’application</h3>
+                <ul class="flex flex-col gap-4">
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">App Links</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">Graph API</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">Meta App Events</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">Meta Pixel</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="flex flex-row pt-4 pb-4">
+                        <a href="#" class="hover:underline hover:text-blue-500">Webhooks</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                
+                </ul>
+                </div>
+                <div class="bloc-1 pb-8">
+                    <h3 class="text-md font-bold border-t-2 border-black pt-5">Authentification</h3>
+                <ul class="flex flex-col gap-4">
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">Facebook Login</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">Limited Facebook Login</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">App Links</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="flex flex-row  pt-4 pb-4"> 
+                        <a href="#" class="hover:underline hover:text-blue-500">Login Connect with Messenger</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                </ul>
+                </div>
+                <div class="bloc-1 pb-8">
+                    <h3 class="text-md font-bold border-t-2 border-black pt-5" >Guides développeur·se</h3>
+                <ul class="flex flex-col gap-4">
+                    <li class="list-item">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Meta App Development</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Politiques pour les equipes de developpement</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                        </svg>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Conditions générales de la plateforme Meta</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                        </svg>
+                    </li>
+                    <li class="flex flex-row pt-4 pb-4">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Confidentialité et consentement</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                        </svg>
+                    </li>
+                </ul>
+                </div>
+                <div class="bloc-1 pb-8">
+                    <h3 class="text-md font-bold border-t-2 border-black pt-5">SDK</h3>
+                <ul class="flex flex-col gap-4">
+                    <li class="list-item">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Facebook SDK for Android</a><svg class="w-6 h-6 text-blue-500 ml-auto"  data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Facebook SDK for IOS</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Facebook SDK for Javascript</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <a href="#"  class="hover:underline hover:text-blue-500">SDK Facebook pour PHP</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Unity SDK</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="flex flex-row pt-4 pb-4">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Meta Business SDK</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+
+                </ul>
+                </div>
+            </div>
+
+            <div class="item flex flex-col pr-20">
+                <div class="bloc-1 pb-8">
+                    <h3 class="text-md font-bold border-t-2 border-black pt-5">Jeux video</h3>
+                <ul class="flex flex-col gap-4">
+                    <li class="list-item">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Facebook Games</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="flex flex-row  pt-4 pb-4">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Game Payments</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                </ul>
+                </div>
+                <div class="bloc-1 pb-8">
+                    <h3 class="text-md font-bold border-t-2 border-black pt-5">Integration sociales</h3>
+                <ul class="flex flex-col gap-4">
+                    <li class="list-item">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Facebook Groups API</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Facebook Pages API</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Instagram Platform</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Sharing</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="flex flex-row  pt-4 pb-4">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Social Plugins</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                </ul>
+                </div>
+                <div class="bloc-1">
+                    <h3 class="text-md font-bold border-t-2 border-black pt-5">Videos</h3>
+                <ul class="flex flex-col gap-4">
+                    <li class="list-item">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Live Video API</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Stories</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+
+                    <li class="flex flex-row  pt-4 pb-4">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Videos</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="item flex flex-col pr-20">
+                <div class="bloc-1  pb-8">
+                    <h3 class="text-md font-bold border-t-2 border-black pt-5">Messagerie d'entreprise</h3>
+                <ul class="flex flex-col gap-4">
+                    <li class="list-item">
+                        <a href="#"  class="hover:underline hover:text-blue-500">Whatsapp Business Platform</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="flex flex-row  pt-4 pb-4">
+                        <a href="#" class="hover:underline hover:text-blue-500">Messenger Platform</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                </ul>
+                </div>
+                <div class="bloc-1  pb-8">
+                    <h3 class="text-md font-bold border-t-2 border-black pt-5">Marketing et Commerce</h3>
+                <ul class="flex flex-col gap-4">
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">Facebook App Ads</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">Automative Ads</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">Catalog</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">Commerce Platform</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="flex flex-row  pt-4 pb-4">
+                        <a href="#" class="hover:underline hover:text-blue-500">Conversion API</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                </ul>
+                </div>
+                <div class="bloc-1  pb-8">
+                    <h3 class="text-md font-bold border-t-2 border-black pt-5">Videos</h3>
+                <ul class="flex flex-col gap-4">
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">Cross-Channel Conversion Optimization</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">Audience Network</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">Meta Business SDK</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">Meta Pay Integration</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">Marketing API</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+
+                    <li class="flex flex-row  pt-4 pb-4">
+                        <a href="#" class="hover:underline hover:text-blue-500">Private Computation</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                </ul>
+                </div>
+                <div class="bloc-1  pb-8">
+                    <h3 class="text-md font-bold border-t-2 border-black pt-5">Lieu de travail</h3>
+                <ul class="flex flex-col gap-4">
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">Meta Work Accounts</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                    <li class="flex flex-row  pt-4 pb-4">
+                        <a href="#" class="hover:underline hover:text-blue-500">Workplace</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+                        </svg>
+                    </li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="item flex flex-col pr-20">
+                <div class="bloc-1 pb-8">
+                    <h3 class="text-md font-bold border-t-2 border-black pt-5">Jeux video</h3>
+                <ul class="flex flex-col gap-4 ">
+                    <li class="flex flex-row  pt-4 pb-4 ">
+                        <a href="#" class="hover:underline hover:text-blue-500">Wit.ai</a>
+                        <svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                        </svg>
+                    </li>
+                </ul>
+                </div>
+                <div class="bloc-1  pb-8">
+                    <h3 class="text-md font-bold border-t-2 border-black pt-5">Realite augmentee</h3>
+                <ul class="flex flex-col gap-4">
+                    <li class="flex flex-row  pt-4 pb-4">
+                        <a href="#" class="hover:underline hover:text-blue-500">Spark AR Studio</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                        </svg>
+                    </li>
+                </ul>
+                </div>
+                <div class="bloc-1  pb-8">
+                    <h3 class="text-md font-bold border-t-2 border-black pt-5">Realite virtuelle</h3>
+                <ul class="flex flex-col gap-4">
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500">Oculus</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="hover:underline hover:text-blue-500 mr-auto">Quill</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                        </svg>
+                    </li>
+
+                    <li class="flex flex-row  pt-4 pb-4">
+                        <a href="#" class="hover:underline hover:text-blue-500 mr-auto ">React 360</a><svg class="w-6 h-6 text-blue-500 ml-auto" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                        </svg>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="bg-footer-bg flex justify-center items-center flex-col">
+    <section class="container lg:justify-center p-10  grid  lg:grid-cols-4 text-sm">
+        <div class="p-4">
+            <img src="src/assets/images/logo-meta.png" alt="logo meta">
+            <p class="pt-5">Nous suivre</p>
+            <div class="social-link flex gap-3 pt-4">
+                <a href="#"><img src="src/assets/icons/facebook.svg" alt="facebook"></a>
+                <a href="#"><img src="src/assets/icons/instagram.svg" alt="instagram"></a>
+                <a href="#"><img src="src/assets/icons/twitter.svg" alt="twitter"></a>
+                <a href="#"><img src="src/assets/icons/linkedin.svg" alt="linkedin"></a>
+            </div>
+        </div>
+        <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Produits</h3>
+            <ul>
+                <li><a href="#">Intelligence artificielle</a></li>
+                <li><a href="#">AR/VR</a></li>
+                <li><a href="#">Outils professionnels</a></li>
+                <li><a href="#">Jeux video</a></li>
+                <li><a href="#">Open Source</a></li>
+                <li><a href="#">Publication</a></li>
+                <li><a href="#">Integrations sociales</a></li>
+                <li><a href="#">Presence Sociale</a></li>
+            </ul>
+        </div>
+        <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Programmes</h3>
+            <ul>
+                <li><a href="#">ThreatExchange</a></li>
+            </ul>
+            <h3 class="text-xl font-bold mb-2 mt-2">Assistance</h3>
+            <ul>
+                <li><a href="#">Assistance pour les developpeur-ses</a></li>
+                <li><a href="#">Bugs</a></li>
+                <li><a href="#">Status de la plateforme</a></li>
+                <li><a href="#">Signaler un incident avec les donnees de la plateforme</a></li>
+                <li><a href="#">Groupe de communaute Facebook for Developers</a></li>
+                <li><a href="#">Plan du site</a></li>
+            </ul>
+        </div>
+
+        <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Actualites</h3>
+            <ul>
+                <li><a href="#">ThreatExchange</a></li>
+                <li><a href="#">Success-stories</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Page Meta pour les developpeur-ses</a></li>
+            </ul>
+            <h3 class="text-lg font-bold mb-2 mt-2">Conditions generales et politiques</h3>
+            <ul>
+                <li><a href="#">Centre d'initiatives de la plateforme</a></li>
+                <li><a href="#">Conditions generales de la plateforme</a></li>
+                <li><a href="#">Politiques developpeur</a></li>
+                <li><a href="#">Engagements de la commission europeenne</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class=" border-black border-t-thin  container lg:justify-center p-10   grid  lg:grid-cols-2">
+        <p>
+            copyright 2024 Meta
+        </p>
+        <ul class="flex flex-col sm:flex-col lg:flex-row text-sm gap-2">
+            <li><a href="#" class="">A propos</a></li>
+            <li><a href="#" class="">Creer une publicite</a></li>
+            <li><a href="#" class="">Emplois</a></li>
+            <li><a href="#" class="">Politiques de Confidentialité</a></li>
+            <li><a href="#" class="">Cookies</a></li>
+            <li><a href="#" class="">Conditions generales</a></li>
+            <li><a href="#" class="">Francais (France)</a></li>
+        </ul>
+        
+    </section>
+</footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.list-item{
+    @apply flex flex-row border-b-thin border-black pt-4 pb-4;
+}
+
